@@ -19,3 +19,8 @@
 #twitter_block_results {
   width: 310px;
 }
+
+#twitter_block_results div.tweet_date p {
+ -webkit-margin-after: 0;
+ margin-bottom: 0;
+}
