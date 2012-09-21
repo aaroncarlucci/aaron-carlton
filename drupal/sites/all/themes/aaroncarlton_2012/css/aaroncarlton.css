@@ -2,6 +2,9 @@
  * @file aaroncarlton.css
  */
 
+/**
+ * Resume page.
+ */
 .field-name-body ul#aaroncarlton-skills-list {
   -webkit-column-count: 3;
   -moz-column-count: 3;
@@ -16,11 +19,20 @@
   column-count: 3;
 }
 
+/**
+ * Twitter block.
+ */
+
 #twitter_block_results {
   /*width: 310px;*/
 }
 
+#twitter_block_results ul {
+  padding-left: 0;
+}
+
 #twitter_block_results div.tweet_date p {
  -webkit-margin-after: 0;
+ font-weight: bold;
  margin-bottom: 0;
 }
