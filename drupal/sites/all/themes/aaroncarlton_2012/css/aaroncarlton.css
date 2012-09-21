@@ -1,0 +1,17 @@
+/**
+ * @file aaroncarlton.css
+ */
+
+.field-name-body ul#aaroncarlton-skills-list {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  -o-column-count: 3;
+  column-count: 3;
+}
+
+.field-name-body ul#aaroncarlton-interests-list {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  -o-column-count: 2;
+  column-count: 2;
+}
