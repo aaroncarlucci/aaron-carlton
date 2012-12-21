@@ -120,3 +120,22 @@ function media_soundcloud_ctools_plugin_api($owner, $api) {
     return array('version' => $api_versions[$owner][$api]);
   }
 }
+
+/**
+ * Implements hook_file_mimetype_mapping_alter().
+ *
+ * Create a fake mimetype so it will be compatible with File Entity's dev changes 
+ * which now requires each file type to select supported mime types
+ */
+function media_soundcloud_file_mimetype_mapping_alter(&$mapping) {
+  $mapping['mimetypes'][] = 'audio/soundcloud';
+}
+
+/*
+ * Implements hook_file_default_types_alter().
+ *
+ * Adds the audio/soundcloud fake mimetype to audio files.
+ */
+function media_soundcloud_file_default_types_alter(&$types) {
+  $types['audio']->mimetypes[] = 'audio/soundcloud';
+}

@@ -66,7 +66,7 @@ function media_soundcloud_file_formatter_audio_settings($form, &$form_state, $se
   );
   $element['extra_params'] = array(
     '#title' => t('Extra parameters'),
-    '#description' => t('Add multiple parameters as comma separated colon separated pairs. Eg. color: 2582fa, show_artwork: false, iframe: true. See http://developers.soundcloud.com/docs/oembed for more parameters.'),
+    '#description' => t('Add multiple parameters as comma separated colon separated pairs. Eg. color: 2582fa, iframe: true. See http://developers.soundcloud.com/docs/oembed for more parameters.'),
     '#type' => 'textfield',
     '#default_value' => $settings['extra_params'],
   );

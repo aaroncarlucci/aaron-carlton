@@ -84,7 +84,7 @@ class MediaSoundCloudStreamWrapper extends MediaReadOnlyStreamWrapper {
     if (!isset($response->error)) {
       return drupal_json_decode($response->data);
     }else{
-      $error_msg = t("Error Embeding SoundCloud Media '@file'. Error code(@code) : !message", array('@file' => $url, '@code' => $response->code, '!message' => $response->status_message));
+      $error_msg = t("Error Embedding SoundCloud Media '@file'. Error code(@code) : !message", array('@file' => $url, '@code' => $response->code, '!message' => $response->status_message));
       // Output error to watchdog
       watchdog('Media Soundcloud', $error_msg, NULL, WATCHDOG_WARNING);
       // Output error to admin
