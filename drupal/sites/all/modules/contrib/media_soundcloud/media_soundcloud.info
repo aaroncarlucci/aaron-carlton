@@ -13,9 +13,9 @@ dependencies[] = media_internet
 
 
 
-; Information added by drupal.org packaging script on 2012-11-21
-version = "7.x-1.0-alpha2+3-dev"
+; Information added by drupal.org packaging script on 2013-03-20
+version = "7.x-1.0"
 core = "7.x"
 project = "media_soundcloud"
-datestamp = "1353460844"
+datestamp = "1363779912"
 
